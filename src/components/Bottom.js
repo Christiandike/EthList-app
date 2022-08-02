@@ -8,6 +8,9 @@ const style = {
   padding: '1rem .75rem 1.25rem .75rem',
   display: 'flex',
   justifyContent: 'space-between',
+  position: 'absolute',
+  top: '100',
+  width: '100%'
 };
 
 const Bottom = () => {

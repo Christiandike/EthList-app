@@ -18,8 +18,9 @@ a:visited,
 a:focus,
 a:active {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
+
 .info a {
   color: #999;
   text-decoration: underline;
@@ -36,6 +37,13 @@ header {
   position: fixed;
   background-color: #fff;
   border-bottom: 1px solid#000;
+}
+
+.header-wrapper a,
+.header-wrapper a:active,
+.header-wrapper a:focus,
+.header-wrapper a:visited {
+  color: #000;
 }
 
 li {
@@ -61,6 +69,7 @@ li {
 
 .logo {
   padding-left: 1.5rem;
+  font-weight: 700;
 }
 
 .menu-btn-wrap img {
@@ -134,10 +143,6 @@ input::placeholder {
   left: 0;
   color: #fff;
   font-family: inherit;
-}
-
-.sidebar-wrap details ul {
-  box-shadow: none;
 }
 
 .sidebar-wrap div {
@@ -214,6 +219,7 @@ section details ul li a {
 
 details {
   margin-top: 0.25rem;
+  cursor: pointer;
 }
 
 details[open] > summary {
@@ -224,13 +230,11 @@ details li {
   font-size: 0.85rem;
   margin-bottom: 0.45rem;
   text-decoration: underline;
-  text-decoration-thickness: 2.5px;
 }
 
 details ul {
-  background-color: #000;
+  background-color: #222;
   border: 1px solid #fff;
-  box-shadow: 5px 5px #fff;
   padding: 1rem;
   margin: 0.5rem 0;
 }
@@ -253,4 +257,107 @@ summary {
   outline: none;
 }
 
+.nav-options {
+  display: none;
+}
+
+.contribute-wrap {
+  height: 75vh;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 30% 10% 0;
+}
+
+.contribute-wrap a,
+.contribute-wrap a:focus,
+.contribute-wrap a:active,
+.contribute-wrap a:visited {
+  color: #00008b;
+}
+
 /* media queries go here */
+@media screen and (max-width: 800px) and (min-width: 500px) and (orientation: landscape) {
+  .eth-logo img {
+    width: 10%;
+  }
+
+  .eth-logo-c img {
+    width: 25%;
+  }
+
+  #sidebar nav ul li a {
+    font-size: 1rem;
+    padding: 0.25rem 0rem;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .eth-logo img {
+    width: 10%;
+  }
+
+  .eth-logo-c img {
+    width: 25%;
+  }
+
+  #sidebar nav ul li a {
+    font-size: 1.5rem;
+    padding: 1rem 0rem;
+  }
+
+  .contribute-wrap {
+    font-size: 2rem;
+    padding: 10% 20% 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-btn-wrap {
+    display: none;
+  }
+
+  .nav-options {
+    display: flex;
+  }
+
+  .nav-options div {
+    padding: 1.25rem;
+  }
+
+  .nav-options div:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 3px;
+    transition: all 500ms ease-in-out;
+  }
+
+  .title {
+    height: 50vh;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 3rem 12rem 1rem 12rem;
+  }
+
+  input {
+    height: 3.45rem;
+  }
+
+  input::placeholder {
+    font-size: 1rem;
+  }
+
+  .eth-logo img {
+    width: 7%;
+  }
+
+  .eth-logo-c img {
+    width: 22%;
+  }
+
+  section {
+    text-align: center;
+  }
+}

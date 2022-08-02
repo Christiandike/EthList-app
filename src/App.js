@@ -5,7 +5,6 @@ import Sidebar from './components/Sidebar';
 import Filter from './components/Filter';
 import Home from './components/Home';
 import Contribute from './components/Contribute';
-import Support from './components/Support';
 import Bottom from './components/Bottom';
 
 const App = () => {
@@ -22,7 +21,6 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contribute' element={<Contribute />} />
-        <Route path='/support' element={<Support />} />
       </Routes>
 
       <Bottom />

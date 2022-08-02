@@ -11,7 +11,7 @@ const Sidebar = ({ setToggleMenu, toggleMenu }) => {
       <div className='sidebar-wrap' id='sidebar'>
         <div>
           EthList:
-          <span> The Comprehensive Ethereum Reading List</span>
+          <span> The Crowdsourced Ethereum Reading List</span>
         </div>
         <nav>
           <ul>
@@ -20,10 +20,7 @@ const Sidebar = ({ setToggleMenu, toggleMenu }) => {
             </li>
             <li onClick={handleToggle}>
               {' '}
-              <Link to='/'>How To Contribute</Link>{' '}
-            </li>
-            <li onClick={handleToggle}>
-              <Link to='/'>Support</Link>{' '}
+              <Link to='/contribute'>How To Contribute</Link>{' '}
             </li>
           </ul>
         </nav>
