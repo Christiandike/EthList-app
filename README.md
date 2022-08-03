@@ -1,1 +1,7 @@
-# EthList-app
+# EthList: The Crowdsourced Ethereum Reading List
+This project is completely based on [this github repo](https://github.com/Scanate/EthList) and serves as a visual browser for all the articles provided there.
+
+## Visit the [website](https://bit.ly/EthList)
+Browse through the top educational and learning materials on Ethereum in [one place](https://bit.ly/EthList).
+
+ 
