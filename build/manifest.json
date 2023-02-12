@@ -1,0 +1,6 @@
+{
+  "short_name": "EthList",
+  "name": "EthList: Ethereum Reading List",
+  "start_url": ".",
+  "display": "standalone"
+}
